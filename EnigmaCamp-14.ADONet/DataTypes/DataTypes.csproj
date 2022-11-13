@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Interfaces\ICommands.cs" />
+    <Compile Remove="Interfaces\IConnection.cs" />
+    <Compile Remove="Interfaces\IDataAccess.cs" />
+    <Compile Remove="Interfaces\IParameterCreation.cs" />
+    <Compile Remove="Interfaces\IParameterFactory.cs" />
+    <Compile Remove="Interfaces\ITransactionControl.cs" />
+    <Compile Remove="Interfaces\ITransactions.cs" />
+    <Compile Remove="SqlServices\Commands.cs" />
+    <Compile Remove="SqlServices\Connection.cs" />
+    <Compile Remove="SqlServices\SqlDataAccess.cs" />
+    <Compile Remove="SqlServices\SqlParameterFactory.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+
+</Project>
